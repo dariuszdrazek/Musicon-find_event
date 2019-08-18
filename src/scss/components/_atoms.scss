@@ -1,3 +1,30 @@
 p {
      font-size: 1.5em;
+     text-align: center;
+}
+
+h1 {
+     font-family: 'Saira Stencil One', cursive;
+     color: $color-light;
+     font-size: 5rem;
+     text-align: center;
+     width: 100%;
+     padding: 0.2em;
+     background-color: rgba($color-primary, 0.4);
+}
+
+.menu__link {
+     color: $color-light;
+     font-size: 1.5em;
+     text-transform: uppercase;
+     font-weight: 900;
+}
+
+.logo {
+     font-family: 'Saira Stencil One', cursive;
+     color: $color-light;
+     text-transform: uppercase;
+     @extend %center;
+     padding: 0.8em;
+     font-size: 1.5em;
 }

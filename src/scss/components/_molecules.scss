@@ -1,0 +1,17 @@
+.title {
+     height: 100%;
+     width: 100%;
+     @extend %center;
+     &__slogan {
+          display: block;
+          font-size: 3rem;
+     }
+}
+
+.menu {
+     @extend %center;
+
+     &__item {
+          padding: 1em;
+     }
+}

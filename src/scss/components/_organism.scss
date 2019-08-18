@@ -1,7 +1,30 @@
+body {
+     font-family: 'Teko', sans-serif;
+}
+
 footer {
      @extend %center;
      max-width: 100%;
-     height: 10vh;
+     height: 15vh;
      background-color: $color-primary;
      color: $color-light;
+}
+
+header {
+     max-width: 100%;
+     height: 100vh;
+     background-image: url('../img/mainBackground.jpg');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+
+nav {
+     display: flex;
+     justify-content: space-between;
+     background-color: rgba($color-third, 1);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+     position: fixed;
+     top: 0;
+     width: 100%;
 }

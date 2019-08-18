@@ -1,10 +1,15 @@
 import React from 'react';
+import { HashRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
 import Footer from './+Footer';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import '../scss/main.scss';
+import Header from './+Header';
 const App = () => {
      return (
           <div>
+               <Router>
+                    <Header />
+               </Router>
+
                <Footer />
           </div>
      );
