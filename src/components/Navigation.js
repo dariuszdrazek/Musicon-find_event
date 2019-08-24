@@ -11,12 +11,12 @@ const Navigation = () => {
                </div>
                <ul className="menu">
                     <li className="menu__item">
-                         <NavLink to="" className="menu__link">
+                         <NavLink to="/" className="menu__link">
                               Home
                          </NavLink>
                     </li>
                     <li className="menu__item">
-                         <NavLink to="" className="menu__link">
+                         <NavLink to="/findEvent" className="menu__link">
                               Find Event
                          </NavLink>
                     </li>

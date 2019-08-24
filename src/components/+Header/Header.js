@@ -1,5 +1,4 @@
 import React from 'react';
-import Navigation from './Navigation';
 
 const Header = () => {
      return (
@@ -155,7 +154,6 @@ const Header = () => {
                <div className="confetti-1" />
                <div className="confetti-0" />
 
-               <Navigation />
                <div className="title">
                     <h1>
                          MUSICON
