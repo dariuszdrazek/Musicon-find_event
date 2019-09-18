@@ -37,10 +37,12 @@ nav {
      max-width: 100%;
 }
 
-.find_event {
+.find_event,
+.favoriteEvents {
      min-height: 100vh;
      background-color: $color-secondary;
      color: $color-light;
+     padding: 2rem 0.5rem;
 }
 
 .form {

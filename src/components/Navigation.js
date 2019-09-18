@@ -17,12 +17,12 @@ const Navigation = () => {
                     </li>
                     <li className="menu__item">
                          <NavLink to="/findEvent" className="menu__link">
-                              Find Event
+                              Events
                          </NavLink>
                     </li>
                     <li className="menu__item">
-                         <NavLink to="" className="menu__link">
-                              Map
+                         <NavLink to="/favoriteEvents" className="menu__link">
+                              Favorite Event
                          </NavLink>
                     </li>
                </ul>

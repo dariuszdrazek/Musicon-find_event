@@ -34,4 +34,29 @@ th {
      text-align: center;
      vertical-align: middle;
      border-bottom: 1px double $color-fourth;
+     min-width: 4rem;
+     height: 3rem;
+}
+
+th {
+     background-color: $color-third;
+}
+
+tr:nth-child(even) {
+     background-color: $color-primary;
+     color: $color-light;
+}
+
+.artist {
+     width: 100%;
+}
+
+.formControl {
+     width: 70vw;
+     margin: 0 auto;
+}
+
+.btn {
+     width: 100%;
+     margin-top: 1rem;
 }

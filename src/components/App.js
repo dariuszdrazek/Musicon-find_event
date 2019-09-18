@@ -5,6 +5,7 @@ import '../scss/main.scss';
 import Header from './+Header';
 import FindEvent from '../containers/FindEvent';
 import Navigation from '../components/Navigation';
+import FavoriteEvents from '../containers/FavoriteEvents';
 
 const App = () => {
      return (
@@ -14,6 +15,10 @@ const App = () => {
                     <Switch>
                          <Route exact path="/" component={Header} />
                          <Route path="/findEvent" component={FindEvent} />
+                         <Route
+                              path="/favoriteEvents"
+                              component={FavoriteEvents}
+                         />
                     </Switch>
                </Router>
 

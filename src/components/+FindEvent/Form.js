@@ -1,29 +1,9 @@
 import React, { useState } from 'react';
-import FormControl from '@material-ui/core/FormControl';
-import InputLabel from '@material-ui/core/InputLabel';
-import Select from '@material-ui/core/Select';
-import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles(theme => ({
-     root: {
-          display: 'flex',
-          flexWrap: 'wrap'
-     },
-     formControl: {
-          margin: theme.spacing(1),
-          minWidth: 150
-     },
-     textField: {
-          marginLeft: theme.spacing(1),
-          marginRight: theme.spacing(1),
-          minWidth: 150
-     }
-}));
+import Button from '@material-ui/core/Button';
 
 const Form = props => {
-     const classes = useStyles();
      const [values, setValues] = useState({
           artist: ''
      });
@@ -38,33 +18,22 @@ const Form = props => {
      };
      return (
           <div>
-               <form className="form" onSubmit={handleSubmit}>
-                    <FormControl className={classes.formControl}>
-                         <TextField
-                              id="artist"
-                              label="Artist"
-                              value={values.artist}
-                              onChange={handleChange}
-                              className={classes.textField}
-                              name="artist"
-                         />
-                    </FormControl>
-
-                    {/* <FormControl className={classes.formControl}>
-                         <InputLabel htmlFor="country">Country</InputLabel>
-                         <Select
-                              value={values.country}
-                              onChange={handleChange}
-                              inputProps={{
-                                   name: 'country',
-                                   id: 'country'
-                              }}>
-                              <MenuItem value={10}>Ten</MenuItem>
-                              <MenuItem value={20}>Twenty</MenuItem>
-                              <MenuItem value={30}>Thirty</MenuItem>
-                         </Select>
-                    </FormControl> */}
-                    <button>Find</button>
+               <form className="formControl" onSubmit={handleSubmit}>
+                    <TextField
+                         id="artist"
+                         label="Artist"
+                         value={values.artist}
+                         onChange={handleChange}
+                         className="artist"
+                         name="artist"
+                    />
+                    <Button
+                         type="submit"
+                         variant="contained"
+                         color="secondary"
+                         className="btn">
+                         Find EVENT
+                    </Button>
                </form>
           </div>
      );

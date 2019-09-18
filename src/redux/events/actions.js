@@ -1,4 +1,4 @@
-import { getEventsUrl, typeMapping } from '../../config';
+import { getEventsUrl } from '../../config';
 
 export const FETCH_EVENTS = '[events] Fetching events';
 export const FETCHED_EVENTS = '[events] Fetched events';
