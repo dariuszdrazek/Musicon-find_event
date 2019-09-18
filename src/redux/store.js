@@ -3,12 +3,13 @@ import { logger } from 'redux-logger';
 import thunk from 'redux-thunk';
 import reducer from './reducers';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import { persistStore } from 'redux-persist';
 
 const middleware = [thunk, logger];
 
-const store = createStore(
+export const store = createStore(
      reducer,
      composeWithDevTools(applyMiddleware(...middleware))
 );
-
-export default store;
+export const persistor = persistStore(store);
+export default { store, persistor };

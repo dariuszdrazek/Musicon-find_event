@@ -25,3 +25,26 @@
      font-size: 1.7rem;
      margin-top: 3rem;
 }
+
+.description {
+     width: 70%;
+     min-height: 16rem;
+     display: flex;
+     @extend %center;
+     flex-direction: column;
+     border: 1px solid;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+     margin: 1.4rem auto;
+}
+
+.city {
+     font-size: 3rem;
+}
+
+.author {
+     font-size: 6rem;
+}
+
+.timer {
+     font-size: 1.5rem;
+}

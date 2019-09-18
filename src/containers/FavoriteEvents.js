@@ -1,16 +1,9 @@
 import { connect } from 'react-redux';
 import FavoriteEvents from '../components/+FavoriteEvents';
-import { addFavoriteEvent } from '../redux/favorite/actions';
 
-const mapState = ({ getEvents: { events } }) => ({ events });
-
-const mapDispatch = dispatch => {
-     return {
-          addEvent: query => dispatch(addFavoriteEvent(query))
-     };
-};
+const mapState = addEvents => addEvents;
 
 export default connect(
      mapState,
-     mapDispatch
+     null
 )(FavoriteEvents);

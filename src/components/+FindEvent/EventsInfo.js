@@ -49,6 +49,10 @@ const EventsInfo = ({ events, addEvent }) => {
           return `${day}/${month}`;
      };
 
+     const add = (e, event) => {
+          e.preventDefault();
+          addEvent(event);
+     };
      return (
           <>
                <table className="events">
@@ -64,8 +68,6 @@ const EventsInfo = ({ events, addEvent }) => {
                     </thead>
                     <tbody>
                          {events.slice(0, 10).map(event => {
-                              // let test = new Date(event.datetime);
-                              // console.log(test.getTime());
                               return (
                                    <tr key={event.id}>
                                         <td>{getDay(event.datetime)}</td>
@@ -87,7 +89,7 @@ const EventsInfo = ({ events, addEvent }) => {
                                         </td>
                                         <td>
                                              <Button
-                                                  onClick={addEvent(event)}
+                                                  onClick={e => add(e, event)}
                                                   type="button"
                                                   variant="contained"
                                                   color="primary"

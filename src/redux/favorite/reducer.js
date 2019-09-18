@@ -1,29 +1,24 @@
-import { ADD_EVENT, ADDED_EVENT, ERROR } from './actions.js';
+import { ADDED_EVENT } from './actions.js';
 
 const initState = {
-     loading: false,
-     events: [],
-     error: ''
+     favorite: []
 };
 
 const addEvents = (state = initState, action) => {
      switch (action.type) {
-          case ADD_EVENT:
-               return {
-                    ...state,
-                    loading: true
-               };
           case ADDED_EVENT:
                return {
-                    loading: false,
-                    events: [...action.payload]
+                    favorite: [action.payload]
                };
-          case ERROR:
-               return {
-                    events: [],
-                    loading: false,
-                    error: action.payload
-               };
+          // return Object.assign({}, state, {
+          //      events: [
+          //           ...state.events
+          //                .filter('lineup')
+          //                .filter(item => item.id !== action.payload.id),
+          //           action.payload
+          //      ]
+          // });
+
           default:
                return state;
      }
