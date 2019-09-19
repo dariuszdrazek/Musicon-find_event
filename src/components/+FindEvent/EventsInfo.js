@@ -103,6 +103,7 @@ const EventsInfo = ({ events, addEvent }) => {
                          })}
                     </tbody>
                </table>
+               )}
           </>
      );
 };
